@@ -1,0 +1,17 @@
+{
+    "total_examples": 4016,
+    "parseable_predictions": 3966,
+    "json_valid_count": 3966,
+    "json_validity_pct": 98.75,
+    "schema_valid_count": 3966,
+    "schema_validity_pct": 98.75,
+    "category_correct": 3963,
+    "category_accuracy_pct": 98.68,
+    "intent_correct": 3959,
+    "intent_accuracy_pct": 98.58,
+    "response_exact_matches": 0,
+    "response_exact_match_pct": 0.0,
+    "placeholder_preserved": 3061,
+    "placeholder_total": 4037,
+    "placeholder_preservation_pct": 75.82
+}

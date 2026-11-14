@@ -1,0 +1,22 @@
+﻿# Python environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and local configuration
+.env
+.env.*
+*.log
+
+# Model and dataset artifacts
+adapter/
+test_dataset.csv
+finetuned_model.jsonl
+checkpoints/
+runs/
+wandb/
+
+# Local caches
+.cache/
+.cache_huggingface/
