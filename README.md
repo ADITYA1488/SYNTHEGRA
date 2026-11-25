@@ -87,3 +87,9 @@ Check the licensing and redistribution terms of the model, adapter, and dataset 
 ## License
 
 License selection is pending review of third-party component licenses.
+
+## Artifact Validation
+
+Run the preflight validator before evaluating or sharing EXP-001 artifacts:
+
+    python validate_artifacts.py
