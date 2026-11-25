@@ -20,3 +20,6 @@ wandb/
 # Local caches
 .cache/
 .cache_huggingface/
+
+# Generated experiment reports
+reports/
