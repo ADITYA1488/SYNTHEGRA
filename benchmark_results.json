@@ -1,0 +1,134 @@
+{
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "pytorch": "2.14.1+cu126",
+    "cuda_runtime": "12.6",
+    "precision": "FP16",
+    "max_new_tokens": 128,
+    "benchmark_samples": 5,
+    "trials_per_model": 3,
+    "sample_indices": [
+        0,
+        100,
+        500,
+        1000,
+        2000
+    ],
+    "raw_results": {
+        "baseline": [
+            {
+                "trial": 1,
+                "model": "Base Qwen2.5-0.5B",
+                "model_loading_seconds": 1.373,
+                "time_to_first_token_seconds": 0.0395,
+                "total_output_tokens": 438,
+                "total_generation_seconds": 17.401,
+                "average_latency_seconds": 3.48,
+                "generation_tokens_per_second": 25.17,
+                "peak_gpu_memory_gb": 0.933
+            },
+            {
+                "trial": 2,
+                "model": "Base Qwen2.5-0.5B",
+                "model_loading_seconds": 1.278,
+                "time_to_first_token_seconds": 0.0483,
+                "total_output_tokens": 438,
+                "total_generation_seconds": 17.098,
+                "average_latency_seconds": 3.42,
+                "generation_tokens_per_second": 25.62,
+                "peak_gpu_memory_gb": 0.933
+            },
+            {
+                "trial": 3,
+                "model": "Base Qwen2.5-0.5B",
+                "model_loading_seconds": 1.299,
+                "time_to_first_token_seconds": 0.0561,
+                "total_output_tokens": 438,
+                "total_generation_seconds": 17.156,
+                "average_latency_seconds": 3.431,
+                "generation_tokens_per_second": 25.53,
+                "peak_gpu_memory_gb": 0.933
+            }
+        ],
+        "finetuned": [
+            {
+                "trial": 1,
+                "model": "Qwen2.5-0.5B + EXP-001 LoRA",
+                "model_loading_seconds": 1.672,
+                "time_to_first_token_seconds": 0.0959,
+                "total_output_tokens": 539,
+                "total_generation_seconds": 47.878,
+                "average_latency_seconds": 9.576,
+                "generation_tokens_per_second": 11.26,
+                "peak_gpu_memory_gb": 0.95
+            },
+            {
+                "trial": 2,
+                "model": "Qwen2.5-0.5B + EXP-001 LoRA",
+                "model_loading_seconds": 1.837,
+                "time_to_first_token_seconds": 0.0719,
+                "total_output_tokens": 539,
+                "total_generation_seconds": 47.982,
+                "average_latency_seconds": 9.596,
+                "generation_tokens_per_second": 11.23,
+                "peak_gpu_memory_gb": 0.95
+            },
+            {
+                "trial": 3,
+                "model": "Qwen2.5-0.5B + EXP-001 LoRA",
+                "model_loading_seconds": 1.616,
+                "time_to_first_token_seconds": 0.1009,
+                "total_output_tokens": 539,
+                "total_generation_seconds": 48.117,
+                "average_latency_seconds": 9.623,
+                "generation_tokens_per_second": 11.2,
+                "peak_gpu_memory_gb": 0.95
+            }
+        ]
+    },
+    "summary": {
+        "baseline": {
+            "model_loading_seconds": {
+                "mean": 1.3167,
+                "std": 0.0499
+            },
+            "time_to_first_token_seconds": {
+                "mean": 0.048,
+                "std": 0.0083
+            },
+            "average_latency_seconds": {
+                "mean": 3.4437,
+                "std": 0.0319
+            },
+            "generation_tokens_per_second": {
+                "mean": 25.44,
+                "std": 0.2381
+            },
+            "peak_gpu_memory_gb": {
+                "mean": 0.933,
+                "std": 0.0
+            }
+        },
+        "finetuned": {
+            "model_loading_seconds": {
+                "mean": 1.7083,
+                "std": 0.1149
+            },
+            "time_to_first_token_seconds": {
+                "mean": 0.0896,
+                "std": 0.0155
+            },
+            "average_latency_seconds": {
+                "mean": 9.5983,
+                "std": 0.0236
+            },
+            "generation_tokens_per_second": {
+                "mean": 11.23,
+                "std": 0.03
+            },
+            "peak_gpu_memory_gb": {
+                "mean": 0.95,
+                "std": 0.0
+            }
+        }
+    }
+}
