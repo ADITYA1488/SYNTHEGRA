@@ -1,0 +1,259 @@
+{
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "pytorch": "2.14.1+cu126",
+    "cuda_runtime": "12.6",
+    "precision": "FP16",
+    "max_new_tokens": 128,
+    "sample_indices": [
+        0,
+        100,
+        500,
+        1000,
+        2000
+    ],
+    "trials_per_configuration": 4,
+    "raw_results": {
+        "base": [
+            {
+                "trial": 1,
+                "mode": "base",
+                "model_loading_seconds": 2.19,
+                "total_output_tokens": 438,
+                "total_generation_seconds": 48.949,
+                "average_latency_seconds": 9.7898,
+                "generation_tokens_per_second": 8.9481,
+                "peak_gpu_memory_gb": 0.933
+            },
+            {
+                "trial": 2,
+                "mode": "base",
+                "model_loading_seconds": 2.375,
+                "total_output_tokens": 438,
+                "total_generation_seconds": 41.8436,
+                "average_latency_seconds": 8.3687,
+                "generation_tokens_per_second": 10.4675,
+                "peak_gpu_memory_gb": 0.933
+            },
+            {
+                "trial": 3,
+                "mode": "base",
+                "model_loading_seconds": 2.6088,
+                "total_output_tokens": 438,
+                "total_generation_seconds": 41.7781,
+                "average_latency_seconds": 8.3556,
+                "generation_tokens_per_second": 10.484,
+                "peak_gpu_memory_gb": 0.933
+            },
+            {
+                "trial": 4,
+                "mode": "base",
+                "model_loading_seconds": 3.1235,
+                "total_output_tokens": 438,
+                "total_generation_seconds": 42.0398,
+                "average_latency_seconds": 8.408,
+                "generation_tokens_per_second": 10.4187,
+                "peak_gpu_memory_gb": 0.933
+            }
+        ],
+        "peft_disabled": [
+            {
+                "trial": 1,
+                "mode": "peft_disabled",
+                "model_loading_seconds": 3.2027,
+                "total_output_tokens": 438,
+                "total_generation_seconds": 51.4419,
+                "average_latency_seconds": 10.2884,
+                "generation_tokens_per_second": 8.5145,
+                "peak_gpu_memory_gb": 0.9494
+            },
+            {
+                "trial": 2,
+                "mode": "peft_disabled",
+                "model_loading_seconds": 3.2759,
+                "total_output_tokens": 438,
+                "total_generation_seconds": 44.2409,
+                "average_latency_seconds": 8.8482,
+                "generation_tokens_per_second": 9.9003,
+                "peak_gpu_memory_gb": 0.9494
+            },
+            {
+                "trial": 3,
+                "mode": "peft_disabled",
+                "model_loading_seconds": 3.3232,
+                "total_output_tokens": 438,
+                "total_generation_seconds": 44.1157,
+                "average_latency_seconds": 8.8231,
+                "generation_tokens_per_second": 9.9284,
+                "peak_gpu_memory_gb": 0.9494
+            },
+            {
+                "trial": 4,
+                "mode": "peft_disabled",
+                "model_loading_seconds": 3.3338,
+                "total_output_tokens": 438,
+                "total_generation_seconds": 44.1116,
+                "average_latency_seconds": 8.8223,
+                "generation_tokens_per_second": 9.9294,
+                "peak_gpu_memory_gb": 0.9494
+            }
+        ],
+        "peft_enabled": [
+            {
+                "trial": 1,
+                "mode": "peft_enabled",
+                "model_loading_seconds": 3.0913,
+                "total_output_tokens": 539,
+                "total_generation_seconds": 136.5124,
+                "average_latency_seconds": 27.3025,
+                "generation_tokens_per_second": 3.9484,
+                "peak_gpu_memory_gb": 0.9503
+            },
+            {
+                "trial": 2,
+                "mode": "peft_enabled",
+                "model_loading_seconds": 2.7177,
+                "total_output_tokens": 539,
+                "total_generation_seconds": 118.2247,
+                "average_latency_seconds": 23.6449,
+                "generation_tokens_per_second": 4.5591,
+                "peak_gpu_memory_gb": 0.9503
+            },
+            {
+                "trial": 3,
+                "mode": "peft_enabled",
+                "model_loading_seconds": 3.6784,
+                "total_output_tokens": 539,
+                "total_generation_seconds": 115.9406,
+                "average_latency_seconds": 23.1881,
+                "generation_tokens_per_second": 4.6489,
+                "peak_gpu_memory_gb": 0.9503
+            },
+            {
+                "trial": 4,
+                "mode": "peft_enabled",
+                "model_loading_seconds": 3.2646,
+                "total_output_tokens": 539,
+                "total_generation_seconds": 115.861,
+                "average_latency_seconds": 23.1722,
+                "generation_tokens_per_second": 4.6521,
+                "peak_gpu_memory_gb": 0.9503
+            }
+        ],
+        "merged": [
+            {
+                "trial": 1,
+                "mode": "merged",
+                "model_loading_seconds": 3.2123,
+                "total_output_tokens": 534,
+                "total_generation_seconds": 50.916,
+                "average_latency_seconds": 10.1832,
+                "generation_tokens_per_second": 10.4879,
+                "peak_gpu_memory_gb": 0.933
+            },
+            {
+                "trial": 2,
+                "mode": "merged",
+                "model_loading_seconds": 3.1588,
+                "total_output_tokens": 534,
+                "total_generation_seconds": 50.3382,
+                "average_latency_seconds": 10.0676,
+                "generation_tokens_per_second": 10.6082,
+                "peak_gpu_memory_gb": 0.933
+            },
+            {
+                "trial": 3,
+                "mode": "merged",
+                "model_loading_seconds": 3.15,
+                "total_output_tokens": 534,
+                "total_generation_seconds": 51.2487,
+                "average_latency_seconds": 10.2497,
+                "generation_tokens_per_second": 10.4198,
+                "peak_gpu_memory_gb": 0.933
+            },
+            {
+                "trial": 4,
+                "mode": "merged",
+                "model_loading_seconds": 3.8572,
+                "total_output_tokens": 534,
+                "total_generation_seconds": 51.315,
+                "average_latency_seconds": 10.263,
+                "generation_tokens_per_second": 10.4063,
+                "peak_gpu_memory_gb": 0.933
+            }
+        ]
+    },
+    "summary": {
+        "base": {
+            "model_loading_seconds": {
+                "mean": 2.5743,
+                "std": 0.4042
+            },
+            "average_latency_seconds": {
+                "mean": 8.7305,
+                "std": 0.7065
+            },
+            "generation_tokens_per_second": {
+                "mean": 10.0796,
+                "std": 0.7548
+            },
+            "peak_gpu_memory_gb": {
+                "mean": 0.933,
+                "std": 0.0
+            }
+        },
+        "peft_disabled": {
+            "model_loading_seconds": {
+                "mean": 3.2839,
+                "std": 0.0597
+            },
+            "average_latency_seconds": {
+                "mean": 9.1955,
+                "std": 0.7287
+            },
+            "generation_tokens_per_second": {
+                "mean": 9.5681,
+                "std": 0.7026
+            },
+            "peak_gpu_memory_gb": {
+                "mean": 0.9494,
+                "std": 0.0
+            }
+        },
+        "peft_enabled": {
+            "model_loading_seconds": {
+                "mean": 3.188,
+                "std": 0.3987
+            },
+            "average_latency_seconds": {
+                "mean": 24.3269,
+                "std": 1.9958
+            },
+            "generation_tokens_per_second": {
+                "mean": 4.4521,
+                "std": 0.3386
+            },
+            "peak_gpu_memory_gb": {
+                "mean": 0.9503,
+                "std": 0.0
+            }
+        },
+        "merged": {
+            "model_loading_seconds": {
+                "mean": 3.3446,
+                "std": 0.3429
+            },
+            "average_latency_seconds": {
+                "mean": 10.1909,
+                "std": 0.0893
+            },
+            "generation_tokens_per_second": {
+                "mean": 10.4806,
+                "std": 0.0923
+            },
+            "peak_gpu_memory_gb": {
+                "mean": 0.933,
+                "std": 0.0
+            }
+        }
+    }
+}
